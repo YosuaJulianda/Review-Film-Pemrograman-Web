@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Review</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>🎬 Movie Review</h1>
+  <input type="text" id="search" placeholder="Cari film...">
+
+</header>
+
+<main>
+  <div id="movieList" class="grid"></div>
+</main>
+
+<!-- Modal Detail -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <img id="modalImg">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+
+    <button id="favBtn">❤️ Tambah ke Favorit</button>
+
+    <h3>Tambah Review</h3>
+    <input type="number" id="rating" min="1" max="5" placeholder="Rating 1-5">
+    <textarea id="comment" placeholder="Komentar..."></textarea>
+    <button id="submitReview">Kirim</button>
+
+    <div id="reviewList"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

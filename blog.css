@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
+}
+
+h1 {
+  font-size: 80px;
+}
+header {
+  padding: 15px;
+  text-align: center;
+  background: #1f1f1f;
+}
+
+input {
+  padding: 20px;
+  width: 80px;
+  margin-top: 10px;
+}
+
+#search {
+  font-size: 20px;
+  padding: 12px;
+  width: 300px;
+}
+
+#search::placeholder {
+  font-size: 18px;
+}
+
+#search {
+  font-size: 20px;
+  padding: 12px;
+  width: 600px;
+}
+
+#search::placeholder {
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 14px;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+textarea {
+  font-size: 14px;
+  padding: 10px;
+  width: 250px;
+  height: 100px;
+  border-radius: 6px;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: px;
+  padding: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #222;
+  margin: 5% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+#modalImg {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.modal-content {
+  background: #222;
+  margin: 5% auto;
+  padding: 20px;
+  width: 320px;
+  border-radius: 10px;
+  text-align: center;
+
+  /* FIX SCROLL */
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.card h3 {
+  font-size: 30px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #e50914;
+}
+
+.cv-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #1f1f1f;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cv-left {
+  background: #181818;
+  padding: 20px;
+  text-align: center;
+}
+
+.cv-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.cv-left h2 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.cv-left p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.cv-box {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.cv-box h3 {
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.cv-right {
+  padding: 25px;
+}
+
+.cv-section {
+  margin-bottom: 20px;
+}
+
+.cv-section h3 {
+  border-left: 4px solid #e50914;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.cv-section p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+@media (max-width: 700px) {
+  .cv-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cv-box p {
+  font-size: 13px;
+  color: #ddd;
+  margin: 6px 0;
+}
+
+.cv-box p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cv-box {
+  background: #222;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.cv-box h3 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: white;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 5px;
+}
+
+/* GALERI */
+.gallery {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  color: white;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+}
